@@ -1,0 +1,10 @@
+framework module MBNetworking {
+  umbrella header "MBNetworking.h"
+
+  export *
+  module * { export * }
+}
+
+module MBNetworking.__Swift {
+    exclude header "MBNetworking-Swift.h"
+}

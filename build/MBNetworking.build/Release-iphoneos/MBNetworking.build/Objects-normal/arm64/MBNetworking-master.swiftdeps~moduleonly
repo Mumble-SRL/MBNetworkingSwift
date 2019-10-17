@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "52dfdba6cf9694972e72149fd6a417bd"
+build_time: [1570008468, 891310000]
+inputs:
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBParameters.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBResponse.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBResult.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBMulitpartFormData.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBValidation.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBError.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBNetworking.swift": [9223372036, 854775807]
+  "/Users/lorenzooliveto/Desktop/MBNetworking/MBNetworking/MBRequest.swift": [9223372036, 854775807]

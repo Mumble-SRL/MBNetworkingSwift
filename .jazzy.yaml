@@ -1,0 +1,34 @@
+author: Mumble
+author_url: https://mumbleideas.it/
+github_url: https://github.com/Mumble-SRL/MBNetworking
+
+theme: fullwidth
+
+custom_categories:
+  - name: MBNetworking
+    children:
+    - MBNetworking
+    - Parameters
+    - HTTPHeader
+    - HTTPMethod
+  - name: Encoding
+    children:
+    - ParameterEncoder
+    - URLParameterEncoder
+    - URLParameterEncodingMethod
+    - JSONParameterEncoder
+  - name: Results
+    children:
+    - MBResult
+    - MBResponse
+    - MBMultipartResponse
+  - name: Errors
+    children:
+    - MBError
+    - MultipartEncodingFailureReason
+  - name: Multipart
+    children:
+    - MBMulitpartFormManager
+    - MBMultipartEncodingResult
+    - MBMultipartForm
+    - MBMultipartFormProtocol

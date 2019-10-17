@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MultipartEncodingFailureReason Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Enum/MultipartEncodingFailureReason" class="dashAnchor"></a>
+
+    <a title="MultipartEncodingFailureReason Enumeration Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          MBNetworking Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Mumble-SRL/MBNetworking">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">MBNetworking Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      MultipartEncodingFailureReason Enumeration Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../MBNetworking.html">MBNetworking</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MBNetworking.html">MBNetworking</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../MBNetworking.html#/s:12MBNetworking10Parametersa">Parameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HTTPHeader.html">HTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Encoding.html">Encoding</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ParameterEncoder.html">ParameterEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/URLParameterEncoder.html">URLParameterEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/URLParameterEncoder/URLParameterEncodingMethod.html">– URLParameterEncodingMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/JSONParameterEncoder.html">JSONParameterEncoder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Results.html">Results</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBResult.html">MBResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MBResponse.html">MBResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBMultipartResponse.html">MBMultipartResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Errors.html">Errors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBError.html">MBError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MultipartEncodingFailureReason.html">MultipartEncodingFailureReason</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Multipart.html">Multipart</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBMulitpartFormManager.html">MBMulitpartFormManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBMultipartEncodingResult.html">MBMultipartEncodingResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBMultipartForm.html">MBMultipartForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBMultipartFormProtocol.html">MBMultipartFormProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>MultipartEncodingFailureReason</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MultipartEncodingFailureReason</span></code></pre>
+
+                </div>
+              </div>
+            <p>This enum represents an error in the encoding of a multipart request</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO18bodyPartURLInvalidyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartURLInvalid(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO18bodyPartURLInvalidyAC10Foundation3URLV_tcACmF">bodyPartURLInvalid(url:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The url is not valid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartURLInvalid</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO23bodyPartFilenameInvalidyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartFilenameInvalid(inUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO23bodyPartFilenameInvalidyAC10Foundation3URLV_tcACmF">bodyPartFilenameInvalid(inUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file name is not valid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartFilenameInvalid</span><span class="p">(</span><span class="nv">inUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO24bodyPartFileNotReachableyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartFileNotReachable(atUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO24bodyPartFileNotReachableyAC10Foundation3URLV_tcACmF">bodyPartFileNotReachable(atUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file name is not reachable</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartFileNotReachable</span><span class="p">(</span><span class="nv">atUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO33bodyPartFileNotReachableWithErroryAC10Foundation3URLV_s0L0_ptcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartFileNotReachableWithError(atURL:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO33bodyPartFileNotReachableWithErroryAC10Foundation3URLV_s0L0_ptcACmF">bodyPartFileNotReachableWithError(atURL:error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file name is not reachable</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartFileNotReachableWithError</span><span class="p">(</span><span class="nv">atURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>error</code> given</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO23bodyPartFileIsDirectoryyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartFileIsDirectory(atUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO23bodyPartFileIsDirectoryyAC10Foundation3URLV_tcACmF">bodyPartFileIsDirectory(atUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file is not a file but a directory</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartFileIsDirectory</span><span class="p">(</span><span class="nv">atUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO28bodyPartFileSizeNotAvailableyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartFileSizeNotAvailable(atUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO28bodyPartFileSizeNotAvailableyAC10Foundation3URLV_tcACmF">bodyPartFileSizeNotAvailable(atUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The size of the file is not available</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartFileSizeNotAvailable</span><span class="p">(</span><span class="nv">atUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO36bodyPartFileSizeQueryFailedWithErroryAC10Foundation3URLV_s0M0_ptcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartFileSizeQueryFailedWithError(forURL:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO36bodyPartFileSizeQueryFailedWithErroryAC10Foundation3URLV_s0M0_ptcACmF">bodyPartFileSizeQueryFailedWithError(forURL:error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The size of the file couldn&rsquo;t be read</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartFileSizeQueryFailedWithError</span><span class="p">(</span><span class="nv">forURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>Error</code> because size read failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO33bodyPartInputStreamCreationFailedyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/bodyPartInputStreamCreationFailed(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO33bodyPartInputStreamCreationFailedyAC10Foundation3URLV_tcACmF">bodyPartInputStreamCreationFailed(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Couldn&rsquo;t create the input stream</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">bodyPartInputStreamCreationFailed</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO20fileIsNotInDirectoryyAC10Foundation3URLV_s5Error_ptcACmF"></a>
+                    <a name="//apple_ref/swift/Element/fileIsNotInDirectory(atUrl:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO20fileIsNotInDirectoryyAC10Foundation3URLV_s5Error_ptcACmF">fileIsNotInDirectory(atUrl:error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The file is not in the directory</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">fileIsNotInDirectory</span><span class="p">(</span><span class="nv">atUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>Error</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO26outputStreamCreationFailedyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/outputStreamCreationFailed(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO26outputStreamCreationFailedyAC10Foundation3URLV_tcACmF">outputStreamCreationFailed(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Couldn&rsquo;t create the output stream</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">outputStreamCreationFailed</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO29outputStreamFileAlreadyExistsyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/outputStreamFileAlreadyExists(atUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO29outputStreamFileAlreadyExistsyAC10Foundation3URLV_tcACmF">outputStreamFileAlreadyExists(atUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The output stream at url already exists</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">outputStreamFileAlreadyExists</span><span class="p">(</span><span class="nv">atUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>atUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO22outputStreamURLInvalidyAC10Foundation3URLV_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/outputStreamURLInvalid(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO22outputStreamURLInvalidyAC10Foundation3URLV_tcACmF">outputStreamURLInvalid(url:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The output stream is invalid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">outputStreamURLInvalid</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>URL</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO23outputStreamWriteFailedyACs5Error_p_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/outputStreamWriteFailed(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO23outputStreamWriteFailedyACs5Error_p_tcACmF">outputStreamWriteFailed(error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Couldn&rsquo;t write to the output stream</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">outputStreamWriteFailed</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>Error</code> given</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking30MultipartEncodingFailureReasonO21inputStreamReadFailedyACs5Error_p_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/inputStreamReadFailed(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking30MultipartEncodingFailureReasonO21inputStreamReadFailedyACs5Error_p_tcACmF">inputStreamReadFailed(error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Couldn&rsquo;t read the input stream</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">inputStreamReadFailed</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>Error</code> given</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-10-02)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
