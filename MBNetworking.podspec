@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MBNetworking"
+  spec.name         = "MBNetworkingSwift"
   spec.version      = "1.0.0"
   spec.summary      = "HTTP networking library."
   spec.description  = "This is the official internal MBNetworking library of MUMBLE Srl."
