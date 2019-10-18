@@ -17,9 +17,9 @@ Pod::Spec.new do |spec|
 
   spec.name         = "MBNetworking"
   spec.version      = "1.0.0"
-  spec.summary      = "This is a really cool library, you can use cool features."
-  spec.description  = "This is a really cool library. This is the official internal MBNetworking library of MUMBLE Srl."
-  spec.homepage     = "https://mumbleideas.it/it/"
+  spec.summary      = "HTTP networking library."
+  spec.description  = "This is the official internal MBNetworking library of MUMBLE Srl."
+  spec.homepage     = "https://github.com/Mumble-SRL/MBNetworkingSwift"
 
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -31,8 +31,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "Apache", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -72,7 +71,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://gitlab.mumbleserver.it/iOS/mb-networking" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBNetworkingSwift.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
