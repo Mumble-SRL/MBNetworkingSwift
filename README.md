@@ -14,10 +14,10 @@ Networking library written in Swift used in MBurger and other Mumble projects.
 
 ## CocoaPods
 
-CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:
+CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate MBNetworkingSwift into your Xcode project using CocoaPods, specify it in your Podfile:
 
 ``` ruby
-pod 'MBNetworking'
+pod 'MBNetworkingSwift'
 ```
 
 ## Manually
