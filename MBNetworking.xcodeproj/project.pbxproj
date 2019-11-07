@@ -12,6 +12,7 @@
 		D25555BD228EF55300CAA71D /* MBNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25555B3228EF55300CAA71D /* MBNetworking.framework */; };
 		D25555C2228EF55300CAA71D /* MBNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25555C1228EF55300CAA71D /* MBNetworkingTests.swift */; };
 		D25555C4228EF55300CAA71D /* MBNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D25555B6228EF55300CAA71D /* MBNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D28B5FA223742C80005215CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28B5FA123742C80005215CB /* MobileCoreServices.framework */; };
 		D2F21BC223391702004A360A /* MBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F21BBF23391702004A360A /* MBResult.swift */; };
 		D2F21BC323391702004A360A /* MBValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F21BC023391702004A360A /* MBValidation.swift */; };
 		D2F21BC423391702004A360A /* MBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F21BC123391702004A360A /* MBError.swift */; };
@@ -39,6 +40,7 @@
 		D25555BC228EF55300CAA71D /* MBNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25555C1228EF55300CAA71D /* MBNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBNetworkingTests.swift; sourceTree = "<group>"; };
 		D25555C3228EF55300CAA71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28B5FA123742C80005215CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D2F21BBF23391702004A360A /* MBResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBResult.swift; sourceTree = "<group>"; };
 		D2F21BC023391702004A360A /* MBValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBValidation.swift; sourceTree = "<group>"; };
 		D2F21BC123391702004A360A /* MBError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBError.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28B5FA223742C80005215CB /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 				D25555B5228EF55300CAA71D /* MBNetworking */,
 				D25555C0228EF55300CAA71D /* MBNetworkingTests */,
 				D25555B4228EF55300CAA71D /* Products */,
+				D28B5FA023742C80005215CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +112,14 @@
 				D25555C3228EF55300CAA71D /* Info.plist */,
 			);
 			path = MBNetworkingTests;
+			sourceTree = "<group>";
+		};
+		D28B5FA023742C80005215CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D28B5FA123742C80005215CB /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

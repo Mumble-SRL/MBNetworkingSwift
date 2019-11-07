@@ -4,6 +4,7 @@
 
 [![Test Status](https://img.shields.io/badge/documentation-100%25-brightgreen.svg)](https://github.com/Mumble-SRL/MBNetworkingSwift/tree/master/docs)
 [![License: MIT](https://img.shields.io/badge/pod-v1.0.7-blue.svg)](https://cocoapods.org)
+[![](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
 [![CocoaPods](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](LICENSE)
 
 # MBNetworking
@@ -13,9 +14,9 @@ Networking library written in Swift used in MBurger and other Mumble projects.
 # Installation 
 
 ## Swift Package Manager
-With Xcode 11 you can start using [Swift Package Manager](https://swift.org/package-manager/) to add MBNetworkingSwift to your project. Follow those simple steps:
+With Xcode 11 you can start using [Swift Package Manager](https://swift.org/package-manager/) to add **MBNetworkingSwift** to your project. Follow those simple steps:
 
-* First of in Xcode go to: File > Swift Packages > Add Package Dependency.
+* In Xcode go to File > Swift Packages > Add Package Dependency.
 * Enter `https://github.com/Mumble-SRL/MBNetworkingSwift.git` in the "Choose Package Repository" dialog and press Next.
 * Specify the version using rule "Up to Next Major" with "1.0.6" as its earliest version and press Next.
 * Xcode will try to resolving the version, after this, you can choose the `MBNetworkingSwift` library and add it to your app target.
@@ -28,11 +29,12 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 pod 'MBNetworkingSwift'
 ```
 
+## Carthage 
+future implementation
+
 ## Manually
 
 Copy and paste the content of the MBNetworking folder in your project
-
-TODO: Carthage
 
 # Usage
 
