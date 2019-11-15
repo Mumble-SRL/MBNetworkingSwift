@@ -10,6 +10,6 @@ final class MBNetworkingSwiftTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testExample", testExample)
     ]
 }
