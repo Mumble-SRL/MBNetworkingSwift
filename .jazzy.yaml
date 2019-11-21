@@ -1,6 +1,7 @@
 author: Mumble
 author_url: https://mumbleideas.it/
 github_url: https://github.com/Mumble-SRL/MBNetworking
+module: MBNetworking
 
 theme: fullwidth
 

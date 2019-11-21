@@ -135,7 +135,7 @@
             <h1>MBError</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MBError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MBError</span> <span class="p">:</span> <span class="kt">LocalizedError</span></code></pre>
 
                 </div>
               </div>
@@ -151,9 +151,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBNetworking7MBErrorO10invalidURLyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/invalidURL" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBNetworking7MBErrorO10invalidURLyA2CmF">invalidURL</a>
+                    <a name="/s:12MBNetworking7MBErrorO10invalidURLyAC10Foundation0D0V_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidURL(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking7MBErrorO10invalidURLyAC10Foundation0D0V_tcACmF">invalidURL(url:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -168,9 +168,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidURL</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">invalidURL</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the invalid url</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -232,9 +251,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBNetworking7MBErrorO15responseProblemyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/responseProblem" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBNetworking7MBErrorO15responseProblemyA2CmF">responseProblem</a>
+                    <a name="/s:12MBNetworking7MBErrorO15responseFailureyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/responseFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking7MBErrorO15responseFailureyA2CmF">responseFailure</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -249,7 +268,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">responseProblem</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">responseFailure</span></code></pre>
 
                         </div>
                       </div>
@@ -259,9 +278,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBNetworking7MBErrorO15encodingFailureyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/encodingFailure" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBNetworking7MBErrorO15encodingFailureyA2CmF">encodingFailure</a>
+                    <a name="/s:12MBNetworking7MBErrorO15encodingFailureyACSS_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/encodingFailure(reason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking7MBErrorO15encodingFailureyACSS_tcACmF">encodingFailure(reason:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -276,9 +295,28 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">encodingFailure</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">encodingFailure</span><span class="p">(</span><span class="nv">reason</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reason</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the reason the validation has failed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -448,6 +486,33 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBNetworking7MBErrorO16errorDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBNetworking7MBErrorO16errorDescriptionSSSgvp">errorDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The description of the error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -456,8 +521,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-10-02)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-11-21)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

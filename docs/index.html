@@ -132,24 +132,60 @@
         <section class="section">
           <div class="section-content">
             
-            <p><img src="Images/mumble-logo.gif" alt="Mumble Logo"></p>
+            <p align="center" >
+<img src="https://raw.githubusercontent.com/Mumble-SRL/MBNetworkingSwift/master/Images/mumble-logo.gif" alt="MBurger Logo" title="Mumble Logo">
+</p>
+
+<p><a href="https://github.com/Mumble-SRL/MBNetworkingSwift/tree/master/docs"><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Test Status"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/badge/pod-v1.0.7-blue.svg" alt="License: MIT"></a>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat" alt=""></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="CocoaPods"></a></p>
 <h1 id='mbnetworking' class='heading'>MBNetworking</h1>
 
 <p>Networking library written in Swift used in MBurger and other Mumble projects.</p>
 <h1 id='installation' class='heading'>Installation</h1>
+<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
+
+<p>With Xcode 11 you can start using <a href="https://swift.org/package-manager/">Swift Package Manager</a> to add <strong>MBNetworkingSwift</strong> to your project. Follow those simple steps:</p>
+
+<ul>
+<li>In Xcode go to File &gt; Swift Packages &gt; Add Package Dependency.</li>
+<li>Enter <code>https://github.com/Mumble-SRL/MBNetworkingSwift.git</code> in the <q>Choose Package Repository</q> dialog and press Next.</li>
+<li>Specify the version using rule <q>Up to Next Major</q> with <q>1.0.6</q> as its earliest version and press Next.</li>
+<li>Xcode will try to resolving the version, after this, you can choose the <code>MBNetworkingSwift</code> library and add it to your app target.</li>
+</ul>
 <h2 id='cocoapods' class='heading'>CocoaPods</h2>
 
-<p>CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'MBNetworking'</span>
+<p>CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate MBNetworkingSwift into your Xcode project using CocoaPods, specify it in your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'MBNetworkingSwift'</span>
 </code></pre>
+<h2 id='carthage' class='heading'>Carthage</h2>
+
+<p>future implementation</p>
 <h2 id='manually' class='heading'>Manually</h2>
 
 <p>Copy and paste the content of the MBNetworking folder in your project</p>
-
-<p>TODO: Carthage and SPM</p>
 <h1 id='usage' class='heading'>Usage</h1>
 
-<p>TODO</p>
+<p>Example usage:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">urlString</span> <span class="o">=</span> <span class="s">"https://www.example.com/api/test"</span>
+
+<span class="k">let</span> <span class="nv">headers</span> <span class="o">=</span> <span class="p">[</span><span class="kt">HTTPHeader</span><span class="p">(</span><span class="nv">field</span><span class="p">:</span> <span class="s">"Accept"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="s">"application/json"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">parameters</span> <span class="o">=</span> <span class="p">[</span><span class="s">"key"</span><span class="p">:</span> <span class="s">"value"</span><span class="p">]</span>
+
+<span class="kt">MBNetworking</span><span class="o">.</span><span class="nf">request</span><span class="p">(</span><span class="nv">withUrl</span><span class="p">:</span> <span class="n">urlString</span><span class="p">,</span>
+                     <span class="nv">method</span><span class="p">:</span> <span class="o">.</span><span class="k">get</span><span class="p">,</span>
+                     <span class="nv">headers</span><span class="p">:</span> <span class="n">headers</span><span class="p">,</span>
+                     <span class="nv">parameters</span><span class="p">:</span> <span class="n">parameters</span><span class="p">,</span>
+                     <span class="nv">encoding</span><span class="p">:</span> <span class="kt">URLParameterEncoder</span><span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="p">{</span> <span class="n">response</span> <span class="k">in</span>
+                        <span class="k">switch</span> <span class="n">response</span><span class="o">.</span><span class="n">result</span> <span class="p">{</span>
+                        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">json</span><span class="p">):</span>
+                            <span class="nf">print</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+                        <span class="k">case</span> <span class="o">.</span><span class="nf">error</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+                            <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+                        <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
 
           </div>
         </section>
@@ -158,8 +194,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-10-02)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-11-21)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
