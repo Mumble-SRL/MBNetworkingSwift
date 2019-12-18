@@ -70,7 +70,7 @@ public struct MBNetworking {
             session.dataTask(with: urlRequest) { (data, urlResponse, error) in
                 guard let httpResponse = urlResponse as? HTTPURLResponse else { return }
                 
-                if let validationFailed = httpResponse.validateStatusCode() {
+                if let validationFailed = httpResponse.validateStatusCode(data: data) {
                     DispatchQueue.main.async {
                         completion(MBResponse<Any>(request: urlRequest, data: data, response: httpResponse, error: error, result: validationFailed))
                     }
