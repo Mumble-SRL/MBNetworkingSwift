@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MBNetworkingSwift"
-  spec.version      = "1.0.10"
+  spec.version      = "1.0.11"
   spec.summary      = "HTTP networking library."
   spec.description  = "This is the official internal MBNetworking library of MUMBLE Srl."
   spec.homepage     = "https://github.com/Mumble-SRL/MBNetworkingSwift"
@@ -71,7 +71,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Mumble-SRL/MBNetworkingSwift.git", :tag => "1.0.10" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBNetworkingSwift.git", :tag => "1.0.11" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -110,7 +110,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "MobileCoreServices"
+  spec.frameworks = "CoreServices"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
