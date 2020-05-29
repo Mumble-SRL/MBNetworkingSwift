@@ -110,7 +110,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "CoreServices"
+  spec.framework = "CoreServices"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
