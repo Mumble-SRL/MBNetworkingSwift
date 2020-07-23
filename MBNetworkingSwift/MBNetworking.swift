@@ -7,7 +7,7 @@
 //  All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /// The header of an HTTP request.
 public struct HTTPHeader {
