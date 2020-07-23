@@ -14,6 +14,7 @@ Networking library written in Swift used in MBurger and other Mumble projects.
 # Installation 
 
 ## Swift Package Manager
+
 With Xcode 11 you can start using [Swift Package Manager](https://swift.org/package-manager/) to add **MBNetworkingSwift** to your project. Follow those simple steps:
 
 * In Xcode go to File > Swift Packages > Add Package Dependency.
