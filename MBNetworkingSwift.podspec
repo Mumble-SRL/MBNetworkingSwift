@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MBNetworkingSwift"
-  spec.version      = "1.0.12"
+  spec.version      = "1.0.13"
   spec.summary      = "HTTP networking library."
   spec.description  = "This is the official internal MBNetworking library of MUMBLE Srl."
   spec.homepage     = "https://github.com/Mumble-SRL/MBNetworkingSwift"
@@ -71,7 +71,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Mumble-SRL/MBNetworkingSwift.git", :tag => "1.0.12" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBNetworkingSwift.git", :tag => "1.0.13" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "MBNetworking/*.{h,m,swift}", "MBNetworking/**/*.{h,m,swift}"
+  spec.source_files  = "MBNetworkingSwift/*.{h,m,swift}", "MBNetworkingSwift/**/*.{h,m,swift}"
 
   # spec.exclude_files = "Classes/Exclude"
 

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D21EA4042339F6C2001DF122 /* MBParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21EA4032339F6C2001DF122 /* MBParameters.swift */; };
 		D21EA4062339FEE8001DF122 /* MBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21EA4052339FEE8001DF122 /* MBRequest.swift */; };
-		D25555BD228EF55300CAA71D /* MBNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25555B3228EF55300CAA71D /* MBNetworking.framework */; };
+		D25555BD228EF55300CAA71D /* MBNetworkingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25555B3228EF55300CAA71D /* MBNetworkingSwift.framework */; };
 		D25555C2228EF55300CAA71D /* MBNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25555C1228EF55300CAA71D /* MBNetworkingTests.swift */; };
 		D25555C4228EF55300CAA71D /* MBNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D25555B6228EF55300CAA71D /* MBNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F21BC223391702004A360A /* MBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F21BBF23391702004A360A /* MBResult.swift */; };
@@ -34,10 +34,10 @@
 /* Begin PBXFileReference section */
 		D21EA4032339F6C2001DF122 /* MBParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBParameters.swift; sourceTree = "<group>"; };
 		D21EA4052339FEE8001DF122 /* MBRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRequest.swift; sourceTree = "<group>"; };
-		D25555B3228EF55300CAA71D /* MBNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25555B3228EF55300CAA71D /* MBNetworkingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBNetworkingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25555B6228EF55300CAA71D /* MBNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBNetworking.h; sourceTree = "<group>"; };
 		D25555B7228EF55300CAA71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D25555BC228EF55300CAA71D /* MBNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25555BC228EF55300CAA71D /* MBNetworkingSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBNetworkingSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25555C1228EF55300CAA71D /* MBNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBNetworkingTests.swift; sourceTree = "<group>"; };
 		D25555C3228EF55300CAA71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28B5FA123742C80005215CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D25555BD228EF55300CAA71D /* MBNetworking.framework in Frameworks */,
+				D25555BD228EF55300CAA71D /* MBNetworkingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 		D25555A9228EF55300CAA71D = {
 			isa = PBXGroup;
 			children = (
-				D25555B5228EF55300CAA71D /* MBNetworking */,
+				D25555B5228EF55300CAA71D /* MBNetworkingSwift */,
 				D25555C0228EF55300CAA71D /* MBNetworkingTests */,
 				D25555B4228EF55300CAA71D /* Products */,
 				D28B5FA023742C80005215CB /* Frameworks */,
@@ -83,13 +83,13 @@
 		D25555B4228EF55300CAA71D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D25555B3228EF55300CAA71D /* MBNetworking.framework */,
-				D25555BC228EF55300CAA71D /* MBNetworkingTests.xctest */,
+				D25555B3228EF55300CAA71D /* MBNetworkingSwift.framework */,
+				D25555BC228EF55300CAA71D /* MBNetworkingSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D25555B5228EF55300CAA71D /* MBNetworking */ = {
+		D25555B5228EF55300CAA71D /* MBNetworkingSwift */ = {
 			isa = PBXGroup;
 			children = (
 				D25555B6228EF55300CAA71D /* MBNetworking.h */,
@@ -103,7 +103,7 @@
 				D2FB12A2233A4D3800949E27 /* MBMulitpartFormData.swift */,
 				D25555B7228EF55300CAA71D /* Info.plist */,
 			);
-			path = MBNetworking;
+			path = MBNetworkingSwift;
 			sourceTree = "<group>";
 		};
 		D25555C0228EF55300CAA71D /* MBNetworkingTests */ = {
@@ -138,9 +138,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D25555B2228EF55300CAA71D /* MBNetworking */ = {
+		D25555B2228EF55300CAA71D /* MBNetworkingSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D25555C7228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworking" */;
+			buildConfigurationList = D25555C7228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworkingSwift" */;
 			buildPhases = (
 				D25555AE228EF55300CAA71D /* Headers */,
 				D25555AF228EF55300CAA71D /* Sources */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = MBNetworking;
+			name = MBNetworkingSwift;
 			productName = MBNetworking;
-			productReference = D25555B3228EF55300CAA71D /* MBNetworking.framework */;
+			productReference = D25555B3228EF55300CAA71D /* MBNetworkingSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D25555BB228EF55300CAA71D /* MBNetworkingTests */ = {
+		D25555BB228EF55300CAA71D /* MBNetworkingSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D25555CA228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworkingTests" */;
+			buildConfigurationList = D25555CA228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworkingSwiftTests" */;
 			buildPhases = (
 				D25555B8228EF55300CAA71D /* Sources */,
 				D25555B9228EF55300CAA71D /* Frameworks */,
@@ -170,9 +170,9 @@
 			dependencies = (
 				D25555BF228EF55300CAA71D /* PBXTargetDependency */,
 			);
-			name = MBNetworkingTests;
+			name = MBNetworkingSwiftTests;
 			productName = MBNetworkingTests;
-			productReference = D25555BC228EF55300CAA71D /* MBNetworkingTests.xctest */;
+			productReference = D25555BC228EF55300CAA71D /* MBNetworkingSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D25555AD228EF55300CAA71D /* Build configuration list for PBXProject "MBNetworking" */;
+			buildConfigurationList = D25555AD228EF55300CAA71D /* Build configuration list for PBXProject "MBNetworkingSwift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,8 +207,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D25555B2228EF55300CAA71D /* MBNetworking */,
-				D25555BB228EF55300CAA71D /* MBNetworkingTests */,
+				D25555B2228EF55300CAA71D /* MBNetworkingSwift */,
+				D25555BB228EF55300CAA71D /* MBNetworkingSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 /* Begin PBXTargetDependency section */
 		D25555BF228EF55300CAA71D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D25555B2228EF55300CAA71D /* MBNetworking */;
+			target = D25555B2228EF55300CAA71D /* MBNetworkingSwift */;
 			targetProxy = D25555BE228EF55300CAA71D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,7 +419,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MBNetworking/Info.plist;
+				INFOPLIST_FILE = MBNetworkingSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,7 +447,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MBNetworking/Info.plist;
+				INFOPLIST_FILE = MBNetworkingSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,7 +504,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D25555AD228EF55300CAA71D /* Build configuration list for PBXProject "MBNetworking" */ = {
+		D25555AD228EF55300CAA71D /* Build configuration list for PBXProject "MBNetworkingSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D25555C5228EF55300CAA71D /* Debug */,
@@ -513,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D25555C7228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworking" */ = {
+		D25555C7228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworkingSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D25555C8228EF55300CAA71D /* Debug */,
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D25555CA228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworkingTests" */ = {
+		D25555CA228EF55300CAA71D /* Build configuration list for PBXNativeTarget "MBNetworkingSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D25555CB228EF55300CAA71D /* Debug */,

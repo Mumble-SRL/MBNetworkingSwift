@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D25555B2228EF55300CAA71D"
-               BuildableName = "MBNetworking.framework"
-               BlueprintName = "MBNetworking"
-               ReferencedContainer = "container:MBNetworking.xcodeproj">
+               BuildableName = "MBNetworkingSwift.framework"
+               BlueprintName = "MBNetworkingSwift"
+               ReferencedContainer = "container:MBNetworkingSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D25555BB228EF55300CAA71D"
-               BuildableName = "MBNetworkingTests.xctest"
-               BlueprintName = "MBNetworkingTests"
-               ReferencedContainer = "container:MBNetworking.xcodeproj">
+               BuildableName = "MBNetworkingSwiftTests.xctest"
+               BlueprintName = "MBNetworkingSwiftTests"
+               ReferencedContainer = "container:MBNetworkingSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D25555B2228EF55300CAA71D"
-            BuildableName = "MBNetworking.framework"
-            BlueprintName = "MBNetworking"
-            ReferencedContainer = "container:MBNetworking.xcodeproj">
+            BuildableName = "MBNetworkingSwift.framework"
+            BlueprintName = "MBNetworkingSwift"
+            ReferencedContainer = "container:MBNetworkingSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
