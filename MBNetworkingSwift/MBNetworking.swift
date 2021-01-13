@@ -207,7 +207,7 @@ public struct MBNetworking {
             return .error(MBError.responseFailure)
         }
         
-        return .success(httpResponse.statusCode)
+        return .success(httpResponse.statusCode, data)
     }
     
     fileprivate static func removeFile(at url: URL) {
